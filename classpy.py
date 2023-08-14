@@ -3,4 +3,4 @@ class Mycity:
     def __init__(self,a) -> None:
         self.x=a
 p=Mycity("Ahmednagar")
-print(p.x)
+print("My city is :",p.x)
