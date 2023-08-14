@@ -1,4 +1,4 @@
-a=123456
+a=int(input("Enter The Number Which You want to reverse:\n"))
 reminder=0
 b=a
 sum=0
