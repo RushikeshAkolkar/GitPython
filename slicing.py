@@ -41,8 +41,14 @@ set.discard("Python")
 s1=sorted(set,reverse=True)
 print(s1)
 #----------------------------------------------day and timing----------------------------------------------------
-import datetime
-today = datetime.datetime.now()
+import datetime as d
+today = d.datetime.now()
 print("Today's is :",today.day," / ",today.month," / ",today.year)
 
 print(len(set))
+
+a="Rushikesh Babasaheb Akolkar"
+
+print(a)
+
+print("Length of A = ",len(a))
