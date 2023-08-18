@@ -92,3 +92,4 @@ names = ["Ramesh","Rajesh","Somesh","Kamesh"]
 for name in names:
     if name.startswith('R'):
         print(name)
+
