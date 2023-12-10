@@ -1,6 +1,7 @@
 #------------------------------------------------List----------------------------------------------------------
 
 list=[100,200,400,101,500,600,700,800,900,200,300,100,200]
+
 print("List of Count = ",list.count(100))
 
 print("List of Index of 500 = ",list.index(500))
@@ -22,13 +23,15 @@ a=101
 if a not in list:
     list.append(a)
     print("Element is added into List :",a)
+
 else:
     print("Element Already Exiscted in List:")
 
 for i in list:
     print(i)
 
-# -------------------------------------Tuples-------------------------------------------------------------------
+#-------------------------------------Tuples-------------------------------------------------------------------
+
 t=(23,34,56,67,67,78)
 print(t)
 
@@ -74,6 +77,7 @@ print(set)
 
 set.add("Python")
 print(set)
+
 set.discard("Python")
 
 s1=sorted(set,reverse=True)
@@ -82,6 +86,7 @@ print(s1)
 # set defining and printing
 
 s = {44,55,66,77,88,99,44}
+
 print(type(s))
 print(s)
 
@@ -89,9 +94,11 @@ print(s)
 #----------------------------------------------dictionary----------------------------------------------------
 
 d={}
+
 d[100]="Jones"
 d[200]="Alice"
 d[300]="Smith"
+
 print(d)
 
 d={100:"Jones",200:"Alice",300:"Smith"}
@@ -99,15 +106,15 @@ print(d)
 
 d={100:"Jones",200:"Alice",300:"Shiv"}
 print(d.items())
+
 for k,v in d.items():
     print(k,"----",v)
 
-d={100:"Jones",200:"Alice",300:"Smith"}
+d={100:"Jones", 200:"Alice", 300:"Smith"}
 print(d.values())
 print(d.keys())
 for v in d.values():
     print(v)
-
 
 #clear function
 d={100:"Jones",200:"Alice",300:"Smith"}
@@ -139,6 +146,7 @@ print(d2)
 marks_report = {}
 size = int(input("Enter number of students U want to add: "))
 i=1
+
 while i <= size:
     print("Enter Student ",i)
     name=input("Enter Student Name: ")
@@ -160,12 +168,18 @@ for name,marks in marks_report.items():
 #----------------------------------------------day and timing----------------------------------------------------
 import datetime as d
 today = d.datetime.now()
+
 print("Today's is :",today.day," / ",today.month," / ",today.year)
+
+print("Today's is :",today.hour," : ",today.minute," : ",today.second)
 
 print(len(set))
 
 a="Rushikesh Babasaheb Akolkar"
+ab="Hrishikesh Babasaheb AKolkar"
+print(a,"       ",ab)
 
-print(a)
+print("Length of A = ",len(a),"Length of AB = ",len(ab))
 
-print("Length of A = ",len(a))
+for b in a :
+    print(b)
